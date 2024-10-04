@@ -25,12 +25,12 @@ aside {
   }
   
   aside img {
-     max-width: 100%;
+     width: 300px;
     height: auto; /* Maintain the aspect ratio by setting height to auto */
   }
 
   main img {
-     max-width: 100%;
+    width: 300px;
     height: auto; /* Maintain aspect ratio */
     border: 1px solid rgb(76, 6, 99); 
     box-shadow: 0 0 5px rgb(8, 134, 172);
