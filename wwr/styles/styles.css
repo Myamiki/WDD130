@@ -87,7 +87,7 @@ h1 {
 }
 
 
-.hero article {
+.hero .articles {
     position: absolute;
     bottom: 180px;
     left: 20px;
@@ -98,13 +98,13 @@ h1 {
     
 }
 
-.hero article img {
+.hero .articles img {
     float: right;
     width: 100px;
     margin-left: 10px;
 }
 
-.hero article p {
+.hero .articles p {
     font-size: 1rem;
     line-height: 1.5;
 }
