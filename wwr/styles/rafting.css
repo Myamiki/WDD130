@@ -1,52 +1,67 @@
 :root{
---primary-color:#390099;
---secondary-color:#9E0059;
---accent1-color:#FF5400;
---accent2-color:#FFBD00;
-}
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-body {
-	font-family: 'Roboto','Jost',sans-serif;
-}
-
-header{
-    display: block;
-    background-color: var(--accent2-color);
-    padding: 5px;
-}
-
-.mylogo img{
-    width: 70px;
-    margin-top: 40px;
-    text-align: left;
-}
-
-nav{
-    text-align: right;
-    justify-content: space-around;
-    margin-bottom: 50px;
-}
-
-nav a{
-    text-decoration: none;
-    color: var(--primary-color);
-    font-size: larger;
-    font-family: 'Roboto','Jost';
-    padding: 2em;
-}
-
-header .hero{
-    margin: 30px;
-}
-
-nav a:hover{
-    border: 10px solid var(--secondary-color) ;
+    --primary-color:#390099;
+    --accent1-color:#FF5400;
+    --accent2-color:#131312;
+    --label-color: #ffff;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
+
+/* General styles */
+   body {
+    font-family: 'Jost', 'Roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header - CSS Grid */
+  header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    background-color: var(--accent2-color);
+    color: var(--label-color);
+    padding: 10px;
+}
+
+   header .mylogo img {
+    width: 100px;
+}
+
+/* Navigation - CSS Flex */
+  nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: var(--label-color);
+    text-decoration: none;
+    padding: 10px;
+}
+nav a:hover{
+    border: 10px solid var(--accent1-color);
+    }
+
+     
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    color: var(--label-color);
+    font-size: 3rem;
+    background-color: rgba(3, 0, 0, 0.6); 
+    width: 100%;
+
+}
+
+/* Hero Section */
 .hero {
     background-image: url('../images/hero1.jpg'); 
     background-size: cover; 
@@ -56,7 +71,7 @@ nav a:hover{
     align-items: center; 
     display: flex; 
     justify-content: center; 
-    color: var(--primary-color); 
+    color: var(--label-color); 
     text-align: center; 
     position: relative; 
     z-index: 1; 
@@ -74,16 +89,13 @@ nav a:hover{
 }
 
 
-h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -20%);
-    color:var(--primary-color);
+.hero-content h1 {
     font-size: 3rem;
-    background-color: rgba(0, 0, 0, 0.6); 
-    width: 100%;
+}
 
+.hero-content img {
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -91,8 +103,8 @@ h1 {
     position: absolute;
     bottom: 180px;
     left: 20px;
-    background-color: rgba(0, 0, 0, 0.6); 
-    color: white;
+    background-color: rgba(5, 2, 1, 0.7); 
+    color: var(--label-color);
     padding: 10px;
     width: 80%;
     
@@ -110,6 +122,7 @@ h1 {
 }
 
 
+
 p{
     padding: 30px;
 }
@@ -124,20 +137,22 @@ p{
     
 }
 
-.pictures{ 
+/* History and Adventure sections */
+.history, .adventure {
+    padding: 20px;
+    background-color: var(--label-color);
+}
+
+.pictures {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 30px;
 }
 
-
-.adventure img{
-    width: 400px;
-    padding: 60px;
-}
-
-.history, 
-.adventure,
- .footers{
-    margin: 30px;
+.pictures img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 
@@ -148,33 +163,29 @@ figure {
 
 figcaption {
     font-size: 0.9rem;
-    color: #555; 
+    color: var(--accent2-color); 
     margin-top: 1px;
 }
-.footers{
-    text-align: center;
-    color: var(--primary-color);
-    font-family: 'Roboto','Jost';
-    font-size: small;
+
+
+
+/* Footer */
+footer {
     background-color: var(--accent2-color);
-    width: 100%;
+    color: var(--label-color);
+    padding: 20px;
+    text-align: center;
 }
 
-  .footers p {
-    flex: 1;
-    margin: 0;
-  }
-
-  .sociallinks {
+footer .sociallinks {
     display: flex;
-  
-  }
-  .sociallinks a{
-    text-decoration: none;
-  }
-  .sociallinks img {
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+footer .sociallinks img {
     width: 30px;
-    height: auto;
-    border-radius: 25px;
-    border: 1px solid black;
-  }
+    height: 30px;
+}
+
+
