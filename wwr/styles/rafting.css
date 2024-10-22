@@ -2,7 +2,9 @@
     --primary-color:#390099;
     --accent1-color:#FF5400;
     --accent2-color:#131312;
-    --label-color: #ffff;
+    --label-color:white;
+    --secondary-color : rgb(179, 200, 206);
+    --background-small: rgb(179, 222, 222);
     }
     * {
         margin: 0;
@@ -103,7 +105,7 @@ h1 {
     position: absolute;
     bottom: 180px;
     left: 20px;
-    background-color: rgba(5, 2, 1, 0.7); 
+    background-color: rgba(3, 0, 0, 0.6) ; 
     color: var(--label-color);
     padding: 10px;
     width: 80%;
@@ -123,7 +125,7 @@ h1 {
 
 
 
-p{
+.history p{
     padding: 30px;
 }
 
@@ -167,6 +169,123 @@ figcaption {
     margin-top: 1px;
 }
 
+/* contact page*/
+
+.map{
+    padding: 15px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 10px 5px rgb(9, 9, 9); /* Shadow effect */
+}
+
+.map p {
+    margin-bottom: 10px;
+    font: bold;
+}
+
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:  rgb(179, 222, 222);
+    box-shadow: 0 0 10px 5px black; /* Shadow effect */
+}
+
+.form-group {
+    margin-bottom: 15px;
+
+}
+
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+input[type="text"], 
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: var(--accent2-color);
+    color: var(--label-color);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Align radio buttons and checkboxes with text */
+.radio-label, .checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+/* Style the form fieldset for radio button group */
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.maps-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+
+
+/* Employee Profiles */
+.employee-profiles {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.employee img{
+    width: 200px;
+    
+    
+}
+
+.employee{
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 6px;
+
+}
+
+.employee p {
+    text-align: center;
+    margin-top: 5px;
+}
 
 
 /* Footer */
@@ -186,6 +305,14 @@ footer .sociallinks {
 footer .sociallinks img {
     width: 30px;
     height: 30px;
+    color: var(--label-color);
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--label-color);
+    font-size: larger;
+    font: bold;
 }
 
 
