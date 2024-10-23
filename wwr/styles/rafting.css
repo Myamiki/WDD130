@@ -108,8 +108,7 @@ h1 {
     background-color: rgba(3, 0, 0, 0.6) ; 
     color: var(--label-color);
     padding: 10px;
-    width: 80%;
-    
+    width: 80%; 
 }
 
 .hero aside img {
