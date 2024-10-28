@@ -581,7 +581,7 @@ footer a{
 }
 
 .trip-cta .cta-button:hover {
-    background-color: var(--label-color);
+    background-color: var((--accent2-color);
 }
 
 /* Trip Details Section */
