@@ -594,7 +594,7 @@ footer a{
 }
 
 .trip-item {
-    background-color: var(--background-small);
+    background-color: var(--label-color);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(7, 6, 5, 0.8);
     overflow: hidden;
