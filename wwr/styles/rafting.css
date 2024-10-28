@@ -2,9 +2,11 @@
     --primary-color:#390099;
     --accent1-color:#FF5400;
     --accent2-color:#131312;
-    --label-color:white;
+    --label-color:#ffff;
     --secondary-color : rgb(179, 200, 206);
     --background-small: rgb(179, 222, 222);
+    --blue-color: rgb(37, 37, 164);
+    
     }
     * {
         margin: 0;
@@ -319,6 +321,10 @@ footer a{
 
 
 
+
+
+
+
 /*welcoing message*/
 .welcome-message {
     font-size: 1.3em;
@@ -536,6 +542,8 @@ footer a{
     padding: 20px;
   }
 
+
+
 /* Trip CTA Section */
 .trip-cta {
     text-align: center;
@@ -564,8 +572,8 @@ footer a{
 
 .trip-cta .cta-button {
     display: inline-block;
-    background-color: #007acc;
-    color: #fff;
+    background-color: var(--blue-color);
+    color: var(--label-color);
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -573,7 +581,7 @@ footer a{
 }
 
 .trip-cta .cta-button:hover {
-    background-color: #005b99;
+    background-color: var(--label-color);
 }
 
 /* Trip Details Section */
@@ -586,7 +594,7 @@ footer a{
 }
 
 .trip-item {
-    background-color: #fff;
+    background-color: var(--background-small);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(7, 6, 5, 0.8);
     overflow: hidden;
@@ -645,16 +653,15 @@ footer a{
 
 .trip-table th, .trip-table td {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--label-color);
     text-align: left;
 }
 
 .trip-table th {
-    background-color: #007acc;
-    color: #fff;
+    background-color: var(--blue-color);
+    color: var(--label-color);
 }
 
 .trip-table tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: var(--label-color);
 }
-
